@@ -1,6 +1,7 @@
 import dotenv from "dotenv";
 dotenv.config();
-const express = require("express");
+import express from "express";
+
 const mongoose = require("mongoose");
 const cors = require("cors");
 const config = require("./database/config");
