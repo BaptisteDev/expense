@@ -1,14 +1,12 @@
-import dotenv from "dotenv";
-dotenv.config();
-import express from "express";
-
+require("dotenv").config();
+const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const config = require("./database/config");
 const cookieParser = require("cookie-parser");
 const path = require("path");
 const __dirname = path.resolve();
-
+dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cookieParser());
